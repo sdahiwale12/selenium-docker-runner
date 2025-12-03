@@ -1,7 +1,7 @@
 version: "3"
 services:
   flight-reservation:
-    image: sd/seleniumdocker
+    image: sdahiwale/seleniumdocker
     environment:
     - BROWSER=chrome
     - HUB_HOST=hub
@@ -10,7 +10,7 @@ services:
     volumes:
     - .\output\flight-reservation:/home/selenium-docker/test-output
   vendor-portal:
-    image: sd/seleniumdocker
+    image: sdahiwale/seleniumdocker
     environment:
     - BROWSER=firefox
     - HUB_HOST=hub
